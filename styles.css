@@ -1,53 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import "header.css";
 
 body {
   background-color: rgb(230, 224, 224);
   font-family: "Kanit", sans-serif;
 }
 
-.header-title {
-  text-align: center;
-  display: block;
-  background-color: rgb(121, 117, 117);
-  font-family: "Kanit", sans-serif;
-  font-size: 2.2rem;
-  font-weight: bold;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "main-footer";
 }
 
-.navigation {
-  background-color: rgb(169, 169, 169);
+.header {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
-.navigation-list {
-  font-size: 1.8rem;
-  font-family: "Kanit", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin-left: 5%;
-  margin-right: 5%;
+.content {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
-.navigation-list-item-link {
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.76);
-  background-color: rgb(169, 169, 169);
-  text-decoration: none;
-  font-weight: bold;
+.main-footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .main-content {
   display: flex;
+  flex-direction: column;
   border-width: 1.1cm;
+}
+
+@media  screen and (min-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
 }
 
 .wine-img {
   width: 70%;
   height: 95%;
-  margin-top: 7px;
-  margin-left: 50px;
-  border: 14px double  rgb(83, 81, 81)
+  margin: auto;
+  display: block;
+  border: 14px double rgb(83, 81, 81)
 }
 
 .content-text {
@@ -75,7 +79,8 @@ body {
   margin-top: 20px;
 }
 
-/*contacto*/
+                                         /*contacto*/
+
 .page-title {
   text-align: left;
   margin-top: 50px;
@@ -102,6 +107,7 @@ textarea {
   font-size: 16px;
   font-style: italic;
 }
+
 .datos-personales {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -113,6 +119,14 @@ textarea {
   display: flex;
   justify-content: center;
   text-decoration: solid;
+}
+
+@media  screen and (min-width: 768px) {
+  .main-contact{
+    display: flex;
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
 }
 
 /*-NOSOTROS*/
@@ -142,6 +156,7 @@ textarea {
   font-weight: bold;
   border-style: solid;
   border-color: rgb(124, 6, 6);
+  background-image: linear-gradient(to left,rgb(216, 210, 210),rgb(202, 195, 195),rgb(126, 123, 123));
 }
 
 .div-conocenos {
@@ -152,14 +167,42 @@ textarea {
 
 .div-texto {
   font-family: "Kanit", sans-serif;
-  font-style: italic;
+  font-style:italic
   font-size: 1.3rem;
+  gap: 7px; 
 }
 
 .network-logo {
   font-size: 2rem;
   color: rgb(124, 6, 6);
   margin-right: 0.5rem;
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+.network-logo {
+ font-size: 2rem;
+  color: rgb(124, 6, 6);
+  .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    font-size: 100px;
+  }
+}
+}
+
+@media  screen and (max-width: 768px) {
+  .div-conocenos{
+    display: flex;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .div-texto{
+      display: flex;
+      font-size: 1rem;
+    }
+ 
 }
 
 /*VINOS Y ESPUMANTES*/
@@ -171,30 +214,43 @@ textarea {
   margin-top: 2rem;
   font-size: 2rem;
 }
+
 .contenedor-vinos {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-around;
-  gap: 50px;
+  display : grid;
+  grid-template-columns : repeat(auto-fill, minmax(23rem, 23rem));
+  justify-content: center;
 }
 
-.contenedor-vinos li {
+
+.contenedor-vinos div{
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
+  align-items: center;
   font-weight: bolder;
-  
 }
 
 .imagen-vino {
+  width: 90%;
   border-radius: 1rem;
   border-style: solid;
   border-color: rgb(124, 6, 6);
-  
 }
 
+@media screen and (min-width: 768px) {
+  .imagen-vino
+    { 
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgb(124, 6, 6);
+  }
+}
+
+.imagen-vino:hover
+{
+ box-shadow: 0 20px 20px rgb(124, 6, 6);
+}
 .comprar {
   width: 50%;
   align-self: center;
@@ -211,16 +267,4 @@ textarea {
   font-family: "Kanit", sans-serif;
   font-style: italic;
   color: rgb(124, 6, 6);
-}
-    
-
-
-
-
-/*GRIDS
-se aplicada GRID al PADRE... EJEM SECTION PADRE.. DIV/ H1 HIJOS.. se aplica al padre lo recibe el hijo
-.grid o section o lo q sea PADRE {
-display:grid  ( para aplicar  grid) IMPORTANTE
-grid-template-colums:  ( para aplicar columnas) ejem 300px 100px son dos columnas
-grid-template-rows:     (para aplicar filas) ejem 100px 200px 300px son 3 filas
 }

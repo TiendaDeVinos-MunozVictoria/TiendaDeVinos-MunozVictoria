@@ -9,111 +9,132 @@
   </head>
 
   <body>
-    <header>
-      <span class="header-title">TIENDA DE VINOS EL BODEGON</span>
+    <div class="container">
+      <header class="header">
+        <span class="header-title">TIENDA DE VINOS EL BODEGON</span>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li>
-            <a class="navigation-list-item-link" href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="navigation-list-item-link" href="./nosotros.html"
-              >Nosotros</a
-            >
-          </li>
-          <li>
-            <a class="navigation-list-item-link" href="./contacto.html"
-              >Contacto</a
-            >
-          </li>
+        <nav class="navigation" id="my-nav">
+          <ul class="navigation-list">
+            <li>
+              <a class="navigation-list-item-link" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a class="navigation-list-item-link" href="./nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a class="navigation-list-item-link" href="./contacto.html"
+                >Contacto</a
+              >
+            </li>
 
-          <li>
-            <a class="navigation-list-item-link" href="./espumantes.html"
-              >Espumantes</a
-            >
-          </li>
+            <li>
+              <a class="navigation-list-item-link" href="./espumantes.html"
+                >Espumantes</a
+              >
+            </li>
 
-          <li>
-            <a class="navigation-list-item-link" href="./vinos.html">Vinos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <li>
+              <a class="navigation-list-item-link" href="./vinos.html">Vinos</a>
+            </li>
 
-    <main>
-      <h1 class="page-title">Vinos</h1>
-      <h2 class="title-2">Transforma tus momentos en especiales...</h2>
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="bi bi-list"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-      <ul class="contenedor-vinos">
-        <li>
-          <span> Luigi Bosca de Sangre Red Blend </span>
-          <span><strong>$3.608</strong></span>
+      <main class="content">
+        <h1 class="page-title">Vinos</h1>
+        <h2 class="title-2">Transforma tus momentos en especiales...</h2>
 
-          <img
-            class="imagen-vino"
-            src="../images/luigiBoscaVinos.jpg"
-            alt="botella de vino Luigi Bosca"
-          />
+        <section class="contenedor-vinos">
+          <div>
+            <span> Luigi Bosca de Sangre Red Blend </span>
+            <span><strong>$3.608</strong></span>
 
-          <button class="comprar">COMPRAR</button>
-        </li>
+            <img
+              class="imagen-vino"
+              src="../images/luigiBoscaVinos.jpg"
+              alt="botella de vino Luigi Bosca"
+            />
 
-        <li>
-          <span> Saint Felicien Tributo 2 Centenaro 2007</span>
-          <span> <strong>$3.608</strong></span>
+            <button class="comprar">COMPRAR</button>
+          </div>
 
-          <img
-            class="imagen-vino"
-            src="../images/saintFelicienTributoVino.jpg"
-            alt="botella de vino Sainte Felicien Tributo"
-          />
+          <div>
+            <span> Saint Felicien Tributo 2 Centenaro 2007</span>
+            <span> <strong>$3.608</strong></span>
 
-          <button class="reserva">RESERVA ESPECIAL</button>
-          <button class="comprar">COMPRAR</button>
-        </li>
+            <img
+              class="imagen-vino"
+              src="../images/saintFelicienTributoVino.jpg"
+              alt="botella de vino Sainte Felicien Tributo"
+            />
 
-        <li>
-          <span> Don Nicanor Blend </span>
-          <span><strong>$1.935</strong></span>
+            <button class="reserva">RESERVA ESPECIAL</button>
+            <button class="comprar">COMPRAR</button>
+          </div>
 
-          <img
-            class="imagen-vino"
-            src="../images/DonNicanorBlend.jpg"
-            alt="botella de vino Don Nicanor Blend"
-          />
+          <div>
+            <span> Don Nicanor Blend </span>
+            <span><strong>$1.935</strong></span>
 
-          <button class="comprar">COMPRAR</button>
-        </li>
+            <img
+              class="imagen-vino"
+              src="../images/DonNicanorBlend.jpg"
+              alt="botella de vino Don Nicanor Blend"
+            />
 
-        <li>
-          <span> Paz Bonarda</span>
-          <span> <strong>$1.390</strong></span>
+            <button class="comprar">COMPRAR</button>
+          </div>
 
-          <img
-            class="imagen-vino"
-            src="../images/pazBonardaVinos.jpg"
-            alt="botella de vino PAZ Bonarda"
-          />
-          <button class="comprar">COMPRAR</button>
-        </li>
+          <div>
+            <span> Paz Bonarda</span>
+            <span> <strong>$1.390</strong></span>
 
-        <li>
-          <span> Paz Malbec </span>
-          <span><strong>$1.390</strong></span>
+            <img
+              class="imagen-vino"
+              src="../images/pazBonardaVinos.jpg"
+              alt="botella de vino PAZ Bonarda"
+            />
+            <button class="comprar">COMPRAR</button>
+          </div>
 
-          <img
-            class="imagen-vino"
-            src="../images/pazMalbecVinos.jpg"
-            alt="botella de vino Paz Malbec"
-          />
+          <div>
+            <span> Paz Malbec </span>
+            <span><strong>$1.390</strong></span>
 
-          <button class="comprar">COMPRAR</button>
-        </li>
-      </ul>
-    </main>
-    <footer class="main-footer">
-      <p>Tienda de Vinos y espumantes - Llegamos a toda la Argentina</p>
-    </footer>
+            <img
+              class="imagen-vino"
+              src="../images/pazMalbecVinos.jpg"
+              alt="botella de vino Paz Malbec"
+            />
+
+            <button class="comprar">COMPRAR</button>
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <p>Tienda de Vinos y espumantes - Llegamos a toda la Argentina</p>
+      </footer>
+    </div>
   </body>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("my-nav");
+      if (x.className === "navigation") {
+        x.className += " responsive";
+      } else {
+        x.className = "navigation";
+      }
+    }
+  </script>
 </html>

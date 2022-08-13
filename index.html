@@ -9,16 +9,19 @@
   </head>
 
   <body>
-    <header>
+    <div class="container">
+    
+    <header class="header">
+       
       <span class="header-title">TIENDA DE VINOS EL BODEGON</span>
 
-      <nav class="navigation">
+      <nav class="navigation" id="my-nav">
         <ul class="navigation-list">
           <li>
             <a class="navigation-list-item-link" href="./index.html">Inicio</a>
           </li>
           <li>
-            <a class="navigation-list-item-link" href="./pages/nosotros.html"
+            <a class="navigation-list-item-link" href="./pages/nosotros.html" 
               >Nosotros</a
             >
           </li>
@@ -38,13 +41,20 @@
               >Vinos</a
             >
           </li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="bi bi-list"></i>
+            </a>
+          </li>
         </ul>
+        
+       
       </nav>
     </header>
 
-    <main>
+    <main class="content">
       <div class="main-content">
-        <section>
+        <section class="content-image">
           <img
             class="wine-img"
             src="./images/imagenvino.jpg"
@@ -61,5 +71,19 @@
     <footer class="main-footer">
       <p>Tienda de Vinos y espumantes - Llegamos a toda la Argentina</p>
     </footer>
+    </div>
   </body>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("my-nav");
+      if (x.className === "navigation") {
+        x.className += " responsive";
+      } else {
+        x.className = "navigation";
+      }
+    }
+    </script>
+    
+
 </html>
