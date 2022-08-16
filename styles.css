@@ -45,7 +45,7 @@ body {
     border-width: 1.1cm;
   }
 }
-
+/*
 .wine-img {
   width: 70%;
   height: 95%;
@@ -53,6 +53,10 @@ body {
   display: block;
   border: 14px double rgb(83, 81, 81)
 }
+*/
+
+#carousel img 
+{ border: 4px double rgb(124, 6, 6); }
 
 .content-text {
   font-family: "Kanit", sans-serif;
@@ -79,7 +83,7 @@ body {
   margin-top: 20px;
 }
 
-                                         /*contacto*/
+  /*CONTACTO*/
 
 .page-title {
   text-align: left;
@@ -93,6 +97,14 @@ body {
 .main-contact {
   display: flex;
   justify-content: center;
+}
+
+.contact-fieldset {
+  padding: 15px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
 }
 
 textarea {
@@ -162,14 +174,18 @@ textarea {
 .div-conocenos {
   font-family: "Kanit", sans-serif;
   display: flex;
+  align-items: baseline;
+  gap:20px;
   text-align: left;
 }
 
 .div-texto {
   font-family: "Kanit", sans-serif;
-  font-style:italic
+  font-style:italic;
   font-size: 1.3rem;
-  gap: 7px; 
+  gap: 7px;
+  display: flex;
+  align-items: center; 
 }
 
 .network-logo {
@@ -186,9 +202,9 @@ textarea {
 .network-logo {
  font-size: 2rem;
   color: rgb(124, 6, 6);
-  .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+ /* .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
     font-size: 100px;
-  }
+  }*/
 }
 }
 
@@ -251,6 +267,7 @@ textarea {
 {
  box-shadow: 0 20px 20px rgb(124, 6, 6);
 }
+/*
 .comprar {
   width: 50%;
   align-self: center;
@@ -259,12 +276,18 @@ textarea {
   padding: 2%;
   margin: 1rem;
 }
+*/
+.btn-outline-dark
+{ color: rgb(124, 6, 6);
+}
 
+/*
 .reserva {
   width: 50%;
   align-self: center;
   font-size: 1.2rem;
   font-family: "Kanit", sans-serif;
-  font-style: italic;
+  font-style: bold;
   color: rgb(124, 6, 6);
 }
+*/

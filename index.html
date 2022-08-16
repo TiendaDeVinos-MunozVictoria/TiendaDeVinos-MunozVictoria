@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Tienda de Vinos El Bodegón</title>
-  </head>
 
-  <body>
-    <div class="container">
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Tienda de Vinos El Bodegón</title>
+</head>
+
+<body>
+  <div class="container">
     <header class="header">
-       
-      <span class="header-title">TIENDA DE VINOS EL BODEGON</span>
-
+      <span class="p-auto mb-auto bg-secondary text-dark text-center fs-1 fw-bold d-block">TIENDA DE VINOS EL
+        BODEGON</span>
+      <!--class="header-title"-->
       <nav class="navigation" id="my-nav">
         <ul class="navigation-list">
           <li>
             <a class="navigation-list-item-link" href="./index.html">Inicio</a>
           </li>
           <li>
-            <a class="navigation-list-item-link" href="./pages/nosotros.html" 
-              >Nosotros</a
-            >
+            <a class="navigation-list-item-link" href="./pages/nosotros.html">Nosotros</a>
           </li>
           <li>
-            <a class="navigation-list-item-link" href="./pages/contacto.html"
-              >Contacto</a
-            >
+            <a class="navigation-list-item-link" href="./pages/contacto.html">Contacto</a>
           </li>
           <li>
-            <a class="navigation-list-item-link" href="./pages/espumantes.html"
-              >Espumantes</a
-            >
+            <a class="navigation-list-item-link" href="./pages/espumantes.html">Espumantes</a>
           </li>
 
           <li>
-            <a class="navigation-list-item-link" href="./pages/vinos.html"
-              >Vinos</a
-            >
+            <a class="navigation-list-item-link" href="./pages/vinos.html">Vinos</a>
           </li>
           <li>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -47,20 +42,42 @@
             </a>
           </li>
         </ul>
-        
-       
       </nav>
     </header>
 
     <main class="content">
       <div class="main-content">
-        <section class="content-image">
+        <!--<section class="content-image">
           <img
             class="wine-img"
             src="./images/imagenvino.jpg"
             alt="Botellas de vino"
-          />
+          /> 
+        </section> -->
+        <!--carousel bootstrap-->
+        <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/imagenvino.jpg" class="d-block w-100 p-2" alt="Vinos" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/VinoTintoCopas.jpg" class="d-block w-100 p-2 " alt="Vino tinto y quesos" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/CopasVinoEspumante.jpg" class="d-block w-75 p-2 "alt="Copas de Vino espumante" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </section>
+
+        <!--fin carousel-->
         <section class="content-text">
           <h2>Somos la tienda número uno en vinos de todo el país</h2>
           <h3>Tenemos el vino que buscas para hacer cada ocasión ÚNICA</h3>
@@ -71,19 +88,23 @@
     <footer class="main-footer">
       <p>Tienda de Vinos y espumantes - Llegamos a toda la Argentina</p>
     </footer>
-    </div>
-  </body>
+  </div>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("my-nav");
-      if (x.className === "navigation") {
-        x.className += " responsive";
-      } else {
-        x.className = "navigation";
-      }
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("my-nav");
+    if (x.className === "navigation") {
+      x.className += " responsive";
+    } else {
+      x.className = "navigation";
     }
-    </script>
-    
+  }
+</script>
 
 </html>
