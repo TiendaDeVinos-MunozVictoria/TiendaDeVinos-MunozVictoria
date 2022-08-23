@@ -45,15 +45,7 @@ body {
     border-width: 1.1cm;
   }
 }
-/*
-.wine-img {
-  width: 70%;
-  height: 95%;
-  margin: auto;
-  display: block;
-  border: 14px double rgb(83, 81, 81)
-}
-*/
+
 
 #carousel
 { border: 4px double rgb(124, 6, 6); }
@@ -95,7 +87,8 @@ body {
 }
 */
 .main-contact {
-  display: flex;
+  width: 50%;
+  margin: auto;
   justify-content: center;
 }
 
@@ -128,18 +121,19 @@ textarea {
 }
 
 .contact-buttons {
-  display: flex;
+  margin-left: 50%;
   justify-content: center;
   text-decoration: solid;
 }
 
 @media  screen and (min-width: 768px) {
   .main-contact{
-    display: flex;
     flex-direction: row;
     border-width: 1.1cm;
   }
+ 
 }
+
 
 /*-NOSOTROS*/
 
@@ -203,6 +197,7 @@ textarea {
 .network-logo {
  font-size: 2rem;
   color: rgb(124, 6, 6);
+ 
 }
 }
 
@@ -216,6 +211,15 @@ textarea {
       display: flex;
       font-size: 1rem;
     }
+ 
+}
+
+@media  screen and (max-width: 512px) {
+  .contact-buttons {
+    margin: auto;
+    justify-content: center;
+    text-decoration: solid;
+  }
  
 }
 
@@ -245,6 +249,16 @@ textarea {
   font-weight: bolder;
 }
 
+.contenedor-vinos-div{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
 .imagen-vino {
   width: 90%;
   border-radius: 1rem;
@@ -265,27 +279,8 @@ textarea {
 {
  box-shadow: 0 20px 20px rgb(124, 6, 6);
 }
-/*
-.comprar {
-  width: 50%;
-  align-self: center;
-  background-color: rgb(124, 6, 6);
-  color: #ffffffec;
-  padding: 2%;
-  margin: 1rem;
-}
-*/
+
 .btn-outline-dark
 { color: rgb(124, 6, 6);
 }
 
-/*
-.reserva {
-  width: 50%;
-  align-self: center;
-  font-size: 1.2rem;
-  font-family: "Kanit", sans-serif;
-  font-style: bold;
-  color: rgb(124, 6, 6);
-}
-*/
