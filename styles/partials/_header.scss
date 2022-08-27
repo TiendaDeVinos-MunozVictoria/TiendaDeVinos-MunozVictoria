@@ -1,0 +1,85 @@
+.navigation {
+  background-color: rgb(169, 169, 169);
+  position: relative;
+}
+
+.navigation-list {
+  font-size: 1.8rem;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navigation-list-item-link {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.76);
+  background-color: rgb(169, 169, 169);
+  text-decoration: none;
+  font-weight: bold;
+  &:hover
+  {
+    color: rgb(124, 6, 6);
+   }
+}
+
+
+
+.navigation a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 10px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.bi-list {
+  color: #000000f6;
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .navigation .icon {
+    display: none;
+  }
+}*/
+
+.navigation.responsive
+  .navigation-list
+  > li:not(:first-child):not(:last-child) {
+  display: inline;
+}
+
+.navigation .navigation-list > li:not(:first-child):not(:last-child) {
+  display: none;
+}
+
+@media  screen and (min-width: 768px) {
+  .navigation-list > li:last-child {
+    display: none;
+  }
+
+  .navigation .navigation-list > li:not(:first-child):not(:last-child) {
+    display: inline;
+  }
+
+  .navigation-list {
+    flex-direction: row;
+  }
+}
+
+/*
+.navigation {
+  position: relative;
+}
+
+.navigation-list-item-link:hover
+{
+  color:rgb(124, 6, 6);
+ }
+*/

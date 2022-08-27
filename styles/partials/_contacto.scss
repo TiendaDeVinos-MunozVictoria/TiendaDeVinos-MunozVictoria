@@ -1,0 +1,52 @@
+.main-contact {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  .contact-fieldset {
+    padding: 15px;
+    border: $border;
+    /*border-width: 2px;
+    border-style:double;
+    border-color: $base-color;*/
+    border-image: initial;
+}
+}
+/*
+.contact-fieldset {
+  padding: 15px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
+}
+*/
+
+textarea {
+  vertical-align: top;
+}
+
+​.ingresa-tus-datos {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.contact-buttons {
+  margin-left: 50%;
+  justify-content: center;
+  text-decoration: solid;
+}
+
+@media  screen and (min-width: 768px) {
+  .main-contact{
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
+ 
+}
+
+
+

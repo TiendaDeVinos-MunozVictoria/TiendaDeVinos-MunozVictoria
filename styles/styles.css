@@ -1,0 +1,588 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/*@import "header.css";*/
+.navigation {
+  background-color: rgb(169, 169, 169);
+  position: relative;
+}
+
+.navigation-list {
+  font-size: 1.8rem;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navigation-list-item-link {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.76);
+  background-color: rgb(169, 169, 169);
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigation-list-item-link:hover {
+  color: rgb(124, 6, 6);
+}
+
+.navigation a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .navigation a.icon {
+    display: none;
+  }
+}
+
+.bi-list {
+  color: rgba(0, 0, 0, 0.9647058824);
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .navigation .icon {
+    display: none;
+  }
+}*/
+.navigation.responsive .navigation-list > li:not(:first-child):not(:last-child) {
+  display: inline;
+}
+
+.navigation .navigation-list > li:not(:first-child):not(:last-child) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list > li:last-child {
+    display: none;
+  }
+  .navigation .navigation-list > li:not(:first-child):not(:last-child) {
+    display: inline;
+  }
+  .navigation-list {
+    flex-direction: row;
+  }
+}
+/*
+.navigation {
+  position: relative;
+}
+
+.navigation-list-item-link:hover
+{
+  color:rgb(124, 6, 6);
+ }
+*/
+.main-contact {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+.main-contact .contact-fieldset {
+  padding: 15px;
+  border: 4px double rgb(124, 6, 6);
+  /*border-width: 2px;
+  border-style:double;
+  border-color: $base-color;*/
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+/*
+.contact-fieldset {
+  padding: 15px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
+}
+*/
+textarea {
+  vertical-align: top;
+}
+
+​.ingresa-tus-datos {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.contact-buttons {
+  margin-left: 50%;
+  justify-content: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+@media screen and (min-width: 768px) {
+  .main-contact {
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
+}
+.main-footer p {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  margin-top: 20px;
+}
+
+body {
+  background-color: rgb(230, 224, 224);
+  font-family: "Kanit", sans-serif;
+}
+
+.titulo-secundario-bienvenidos {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.texto {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgb(124, 6, 6);
+  background-image: linear-gradient(to left, rgb(216, 210, 210), rgb(202, 195, 195), rgb(126, 123, 123));
+}
+
+.div-conocenos {
+  margin-top: 3%;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  text-align: left;
+}
+.div-conocenos .div-texto {
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  gap: 7px;
+  display: flex;
+  align-items: center;
+}
+
+/*
+.div-texto {
+  font-family: "Kanit", sans-serif;
+  font-style:italic;
+  font-size: 1.3rem;
+  gap: 7px;
+  display: flex;
+  align-items: center; 
+}*/
+.network-logo {
+  font-size: 2rem;
+  color: rgb(124, 6, 6);
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .network-logo {
+    font-size: 2rem;
+    color: rgb(124, 6, 6);
+  }
+}
+
+.bi::before, [class^=bi-]::before, [class*=" bi-"]::before {
+  font-size: 30px;
+}
+
+/*
+@media screen and (min-width: 768px) {
+.network-logo {
+ font-size: 2rem;
+  color: rgb(124, 6, 6);
+
+}
+}*/
+@media screen and (max-width: 768px) {
+  .div-conocenos {
+    display: flex;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .div-texto {
+    display: flex;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 512px) {
+  .contact-buttons {
+    margin: auto;
+    justify-content: center;
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+  }
+}
+.title-2 {
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.contenedor-vinos-div {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.imagen-vino {
+  width: 90%;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: rgb(124, 6, 6);
+}
+.imagen-vino:hover {
+  box-shadow: 0 20px 20px rgba(124, 6, 6, 0.7);
+}
+@media screen and (min-width: 768px) {
+  .imagen-vino {
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgb(124, 6, 6);
+  }
+}
+
+.btn-outline-dark {
+  color: rgb(124, 6, 6);
+}
+
+/*
+
+.imagen-vino:hover
+{
+ box-shadow: 0 20px 20px rgb(124, 6, 6);
+}
+
+
+@media screen and (min-width: 768px) {
+  .imagen-vino
+    { 
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgb(124, 6, 6);
+  }
+}
+*/
+/*
+ .contenedor-vinos {
+   display : grid;
+   grid-template-columns : repeat(auto-fill, minmax(23rem, 23rem));
+   justify-content: center;
+ }*/
+/*
+.contenedor-vinos div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+}*/
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "content" "main-footer";
+}
+.container1 .header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.container1 .content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.container1 .main-footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  border-width: 1.1cm;
+}
+@media screen and (min-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
+}
+
+#carousel {
+  border: 4px double rgb(124, 6, 6);
+}
+
+/*4px double rgb(124, 6, 6)*/
+.content-text {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(124, 6, 6);
+}
+
+/*
+.header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.main-footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+*/
+/*
+@media  screen and (min-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
+}
+*/
+/*
+.main-footer p {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  margin-top: 20px;
+}
+/*
+  /*CONTACTO*/
+/*
+.main-contact {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+
+.contact-fieldset {
+  padding: 15px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+​.ingresa-tus-datos {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.datos-personales {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: inline-block;
+  font-family: "Kanit", sans-serif;
+}
+
+.contact-buttons {
+  margin-left: 50%;
+  justify-content: center;
+  text-decoration: solid;
+}
+
+@media  screen and (min-width: 768px) {
+  .main-contact{
+    flex-direction: row;
+    border-width: 1.1cm;
+  }
+
+}
+*/
+/*-NOSOTROS*/
+/*
+.titulo-secundario-bienvenidos {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.texto {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgb(124, 6, 6);
+  background-image: linear-gradient(to left,rgb(216, 210, 210),rgb(202, 195, 195),rgb(126, 123, 123));
+}
+
+.div-conocenos {
+  margin-top: 3%;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  align-items: baseline;
+  gap:20px;
+  text-align: left;
+}
+
+.div-texto {
+  font-family: "Kanit", sans-serif;
+  font-style:italic;
+  font-size: 1.3rem;
+  gap: 7px;
+  display: flex;
+  align-items: center; 
+}
+
+.network-logo {
+  font-size: 2rem;
+  color: rgb(124, 6, 6);
+  margin-right: 0.5rem;
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+.network-logo {
+ font-size: 2rem;
+  color: rgb(124, 6, 6);
+
+}
+}
+
+@media  screen and (max-width: 768px) {
+  .div-conocenos{
+    display: flex;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .div-texto{
+      display: flex;
+      font-size: 1rem;
+    }
+
+}
+
+@media  screen and (max-width: 512px) {
+  .contact-buttons {
+    margin: auto;
+    justify-content: center;
+    text-decoration: solid;
+  }
+
+}
+*/
+/*VINOS Y ESPUMANTES*/
+/*
+.title-2 {
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.contenedor-vinos {
+  display : grid;
+  grid-template-columns : repeat(auto-fill, minmax(23rem, 23rem));
+  justify-content: center;
+}
+
+
+.contenedor-vinos div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.contenedor-vinos-div{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.imagen-vino {
+  width: 90%;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: rgb(124, 6, 6);
+}
+
+@media screen and (min-width: 768px) {
+  .imagen-vino
+    { 
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgb(124, 6, 6);
+  }
+}
+
+.imagen-vino:hover
+{
+ box-shadow: 0 20px 20px rgb(124, 6, 6);
+}
+
+
+
+.btn-outline-dark
+{ color: rgb(124, 6, 6);
+}
+
+
+*//*# sourceMappingURL=styles.css.map */
