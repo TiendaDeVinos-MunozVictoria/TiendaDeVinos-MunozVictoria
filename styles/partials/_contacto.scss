@@ -1,7 +1,8 @@
 .main-contact {
   width: 50%;
   margin: auto;
-  justify-content: center;
+  justify-content: map-get($estilos, justify-content1 ) ;
+  /*justify-content: center;*/
   .contact-fieldset {
     padding: 15px;
     border: $border;
@@ -15,7 +16,8 @@ textarea {
 }
 
 ​.ingresa-tus-datos {
-  text-align: center;
+  text-align: map-get($estilos, text-align1 ) ;
+  /*text-align: center;*/
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: "Kanit", sans-serif;

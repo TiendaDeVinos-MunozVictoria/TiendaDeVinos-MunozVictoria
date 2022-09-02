@@ -4,7 +4,8 @@
   justify-content: center;
   font-size: 1.2rem;
   font-weight: bold;
-  text-align: center;
+  text-align: map-get($estilos, text-align1 ) ;
+  /*text-align: center;*/
   font-family: "Kanit", sans-serif;
   margin-top: 20px;
 }

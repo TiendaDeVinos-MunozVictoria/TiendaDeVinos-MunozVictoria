@@ -1,6 +1,7 @@
 .title-2 {
     justify-items: center;
-    text-align: center;
+    text-align: map-get($estilos, text-align1 ) ;
+   /* text-align: center;*/
     margin-bottom: 3rem;
     margin-top: 2rem;
     font-size: 2rem;
@@ -39,39 +40,4 @@
   
 
 
-  /*
-
-  .imagen-vino:hover
-  {
-   box-shadow: 0 20px 20px rgb(124, 6, 6);
-  }
-
-
-  @media screen and (min-width: 768px) {
-    .imagen-vino
-      { 
-      border-radius: 1rem;
-      border-style: solid;
-      border-color: rgb(124, 6, 6);
-    }
-  }
-  */
-
- /*
-  .contenedor-vinos {
-    display : grid;
-    grid-template-columns : repeat(auto-fill, minmax(23rem, 23rem));
-    justify-content: center;
-  }*/
   
-  
-  
-   /*
-  .contenedor-vinos div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
-    font-weight: bolder;
-  }*/
