@@ -2,7 +2,6 @@
   width: 50%;
   margin: auto;
   justify-content: map-get($estilos, justify-content1 ) ;
-  /*justify-content: center;*/
   .contact-fieldset {
     padding: 15px;
     border: $border;
@@ -17,7 +16,6 @@ textarea {
 
 ​.ingresa-tus-datos {
   text-align: map-get($estilos, text-align1 ) ;
-  /*text-align: center;*/
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: "Kanit", sans-serif;
@@ -27,7 +25,7 @@ textarea {
 
 .enviar{
 @extend %botonBase;
-justify-content: center;
+/*justify-content: center;*/
 }
 
 @media  screen and (min-width: 768px) {
@@ -38,5 +36,7 @@ justify-content: center;
  
 }
 
-
-
+.form-control:focus {
+  box-shadow: 5px 7px 5px rgba(124, 6, 6, 0.5);
+  border: 1px solid rgb(124, 6, 6);
+}
