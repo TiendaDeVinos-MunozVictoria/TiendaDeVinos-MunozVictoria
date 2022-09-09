@@ -120,7 +120,6 @@ textarea {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  /*text-align: center;*/
   font-family: "Kanit", sans-serif;
   margin-top: 20px;
 }
@@ -151,7 +150,6 @@ body {
 
 .div-conocenos {
   margin-top: 3%;
-  /*margin-top: 3%;*/
   font-family: "Kanit", sans-serif;
   display: flex;
   align-items: baseline;

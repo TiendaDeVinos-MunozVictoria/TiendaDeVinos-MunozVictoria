@@ -37,7 +37,7 @@
     flex-direction: column;
     border-width: 1.1cm;
     @media  screen and (min-width: 768px) {
-      display: flex;
+        display: map-get($estilos, display1 );
       flex-direction: row;
       border-width: 1.1cm;
     }

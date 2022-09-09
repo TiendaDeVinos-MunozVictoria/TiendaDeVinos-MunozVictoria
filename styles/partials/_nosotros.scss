@@ -19,9 +19,8 @@
 
 .div-conocenos {
   margin-top: map-get($estilos, margin-top1);
-  /*margin-top: 3%;*/
   font-family: "Kanit", sans-serif;
-  display: flex;
+  display: map-get($estilos, display1 );
   align-items: baseline;
   gap:20px;
   text-align: left;
